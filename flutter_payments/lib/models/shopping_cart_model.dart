@@ -21,7 +21,7 @@ final List<Clock> listClocks = [
     id: 1,
     name: 'Clock',
     price: '79.00',
-    imageUrl: 'assets/images/pexels1.jpg',
+    imageUrl: 'assets/images/pexels6.jpg',
     isFavorite: true,
     subMenu: 'Clock_box',
   ),
