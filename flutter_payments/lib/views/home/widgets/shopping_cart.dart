@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_payments/models/shopping_cart_model.dart';
+import 'package:flutter_payments/views/payments/views/payment_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget buildShoppingCard(
@@ -10,7 +11,8 @@ Widget buildShoppingCard(
     padding: EdgeInsets.all(4.sp),
     child: InkWell(
       onTap: () {
-        //Navigator.of(context).push(MaterialPageRoute(builder: (context)));
+        Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => const PaymentScreen()));
       },
       child: Container(
         decoration: BoxDecoration(
@@ -24,8 +26,7 @@ Widget buildShoppingCard(
           ],
           color: Colors.white,
         ),
-        child: ListView(
-          physics: const NeverScrollableScrollPhysics(),
+        child: Column(
           children: [
             Container(
               height: 92.h,
